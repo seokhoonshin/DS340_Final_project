@@ -1,6 +1,7 @@
 # DS340_Final_Project
 
 **Weather Classification and Clothing Recommendation System**
+
 This project bridges the gap between weather forecasting and actionable advice by classifying weather conditions from images and recommending suitable clothing based on detected weather patterns.
 
 **Key Features**
