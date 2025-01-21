@@ -1,33 +1,68 @@
-# DS340_Final_Project
+# DS340_Final_Project: Weather Image Classification and Clothing Recommendation System
 
-**Weather Image Classification and Clothing Recommendation System**
+## Overview
+This project bridges the gap between weather forecasting and actionable advice by:
+- Classifying weather conditions from images.
+- Recommending suitable clothing based on detected weather patterns.
 
-This project bridges the gap between weather forecasting and actionable advice by classifying weather conditions from images and recommending suitable clothing based on detected weather patterns.
+The system leverages advanced deep learning techniques to provide accurate weather classifications and practical recommendations.
 
-**Key Features**
+---
 
-Advanced Deep Learning Models: Utilizes transfer learning with pre-trained models like ResNet50, MobileNet, and VGG19.
+## Key Features
+- **Advanced Deep Learning Models:**
+  - Utilizes transfer learning with pre-trained models such as ResNet50, MobileNet, and VGG19.
+- **Custom Image Processing Pipeline:**
+  - Preprocessed and augmented weather image data to enhance generalization and handle class imbalance.
+- **Practical Applications:**
+  - Provides actionable clothing recommendations based on classified weather conditions.
 
-Custom Image Processing Pipeline: Preprocessed and augmented weather image data to enhance generalization and handle class imbalance.
+---
 
-Practical Applications: Provides actionable clothing recommendations based on classified weather conditions.
+## Methodology
 
-**Methodology**
+### Dataset
+- Curated dataset of weather images representing **11 unique conditions**, including:
+  - Snow, Rain, Sandstorms, and more.
 
-Dataset: A curated dataset of weather images representing 11 unique conditions, including snow, rain, and sandstorms.
+### Model Development
+1. **Baseline Model:**
+   - Custom Convolutional Neural Network (CNN) achieving ~66% accuracy.
+2. **Enhanced Model:**
+   - Fine-tuned **ResNet50**, achieving superior performance (~83% accuracy).
+3. **Evaluation:**
+   - Metrics include:
+     - Accuracy
+     - Precision
+     - Recall
+     - F1-score
+   - Addressed challenges like imbalanced categories through data augmentation and weighted loss functions.
 
-Model Development:
+---
 
-Baseline: Custom CNN achieving ~66% accuracy.
-Enhanced: ResNet50 fine-tuned for superior performance (~83% accuracy).
-Evaluation: Metrics include accuracy, precision, recall, and F1-score, addressing challenges like imbalanced categories.
+## Results
+- **ResNet50** outperformed other models, demonstrating:
+  - Robust generalization.
+  - Minimal overfitting.
+- Extended applications included:
+  - Testing on external datasets.
+  - Generating clothing recommendations for various weather scenarios.
 
-**Results**
+---
 
-ResNet50 outperformed other models, demonstrating robust generalization and minimal overfitting.
-Extended applications included testing on external datasets and generating clothing suggestions for various weather scenarios.
+## Future Directions
+- Expand dataset diversity to include more weather conditions and geographic regions.
+- Explore newer architectures like **Vision Transformers** for improved accuracy.
+- Develop real-time prediction capabilities for enhanced usability.
 
-**Future Directions**
+---
 
-Expand dataset diversity and explore newer architectures like Vision Transformers.
-Develop real-time prediction capabilities for improved usability.
+## Tools and Technologies
+- **Deep Learning Models:** ResNet50, MobileNet, VGG19, Custom CNN
+- **Programming Language:** Python
+- **Libraries and Frameworks:** TensorFlow, Keras, OpenCV
+- **Data Visualization:** Matplotlib, Seaborn
+- **Image Augmentation:** TensorFlow's `ImageDataGenerator`
+
+---
+
